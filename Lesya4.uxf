@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>396</y>
+      <w>264</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>/Abstract People/
+bg=yellow
+--
+- name: String
+- inFlight: boolean
+- backpack: Backpack
+--
++ makeFly(boolean): void
++ isFly(): boolean
++ getName(): String
++ hashCode(): Int
++ toString(): String
++ equals(People): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>228</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Interface HasBackpackI
+bg=green
+--
++ getReady(Backpack): void
++ getBackpack(): Backpack
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>300</y>
+      <w>132</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;impliments&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>588</x>
+      <y>660</y>
+      <w>192</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Shorty
+bg=green
+--
+- nameType: Names
+- name: string
+- backpack: Backpack
+--
++ getName(): String
++ setName(String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>348</x>
+      <y>660</y>
+      <w>192</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Policeman
+bg=green
+--
+- counter: Int
+- name: String
+- backpack: Backpack
+--
++ appear(): void
++ getCounter(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>240</y>
+      <w>168</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>enum ActionType
+bg=yellow
+--
+TURN_AROUND
+DOWN
+STOP
+COME_BACK
+SAY
+SEE
+SEE_THAT
+RUN
+SINGING_FOR_FUN
+--
+- name: String
+--
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>600</y>
+      <w>120</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>600</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>528</y>
+      <w>168</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>enum Names
+bg=green
+--
+PILULKIN
+ZNAYKA
+KOLOSOK
+KOROTYSHKY
+--
+- name: String
+--
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>492</y>
+      <w>216</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>Backpack
+bg=yellow
+--
+- Items[]: Item
+- capacity: Int
+- occypancy: Int
+--
++ getItem(): Item
++ addItem(Item): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>228</y>
+      <w>204</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Item
+bg=green
+--
+- isReady: boolean
+- name: String
+--
++ getName(): String
++ setReady(boolean): void
++ isReady(): boolean
++ hashCode(): Int
++ toString(): String
++ equals(Item): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1236</x>
+      <y>228</y>
+      <w>300</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Static member WeightlessnessDevice
+bg=yellow
+--
+- isActive: boolean
+--
++ getActive(boolean, People[]...): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1368</x>
+      <y>300</y>
+      <w>36</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1128</x>
+      <y>408</y>
+      <w>36</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>732</x>
+      <y>228</y>
+      <w>288</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Interface CanDoSomethingI
+bg=green
+--
++ doSomething(Backpack): void
++ doAction(ActionType...): void
++ doAction(Sring, ActionType...): void
++ doAction(String): void	</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>324</y>
+      <w>156</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;impliments&gt;&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>396</y>
+      <w>204</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Local OutputManager
+bg=blue
+--
+- item: Item
+--
++ getItemReady(): void
++ getOutput(People): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>372</y>
+      <w>180</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1248</x>
+      <y>492</y>
+      <w>240</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Nontatic member ItemManager
+bg=blue
+--
++ getItem(): Item
++ addItem(Item): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>852</x>
+      <y>660</y>
+      <w>360</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>RuntimeException DontFindAnyItemException
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>852</x>
+      <y>708</y>
+      <w>360</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Exception CanNotAddItemException
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
